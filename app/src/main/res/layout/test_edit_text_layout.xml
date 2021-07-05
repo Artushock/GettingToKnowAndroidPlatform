@@ -14,7 +14,7 @@
         android:text="Введите ваши данные"
         android:textAllCaps="true"
         android:textColor="@color/purple_700"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
