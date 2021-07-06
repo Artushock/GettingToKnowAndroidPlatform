@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
-        android:text="Введите данные"
+        android:text="@string/enter_your_details"
         android:textAlignment="center"
         android:textColor="#6200EE"
         android:textSize="24sp" />
@@ -21,13 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:hint="Имя" />
+        android:hint="@string/name"
+        android:autofillHints="Имя"
+        android:inputType="text"/>
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Фамилия" />
+        android:hint="@string/surname"
+        android:autofillHints="Фамилия"
+        android:inputType="text"/>
 
     <RadioGroup
         android:layout_width="200dp"
@@ -38,23 +42,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Пол: "
+            android:text="@string/sex"
             android:textColor="@color/black"
-            android:textSize="16dp"
-
-            />
+            android:textSize="16sp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="Мужчина" />
+            android:layout_marginStart="48dp"
+            android:text="@string/man" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="Женщина" />
+            android:layout_marginStart="48dp"
+            android:text="@string/woman" />
 
     </RadioGroup>
 
@@ -62,35 +64,35 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Языки програмирования:"
+            android:text="@string/prog_langs"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
 
             />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="С++" />
+            android:layout_marginStart="48dp"
+            android:text="@string/cpp" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="Java" />
+            android:layout_marginStart="48dp"
+            android:text="@string/java" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="Kotlin" />
+            android:layout_marginStart="48dp"
+            android:text="@string/kotlin" />
 
     </LinearLayout>
 
@@ -100,23 +102,28 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:textOff="Не запоминать"
-        android:textOn="Запомнить меня"
-        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_corner_button_off"
-        android:textSize="16dp"
-        />
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textOff="@string/dnt_remember"
+        android:textOn="@string/remember"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/submit_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:text="Отправить"
-        android:onClick="onClick"/>
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        android:text="@string/send" />
 
+    <Button
+        android:id="@+id/next_task_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/next_task" />
 
 </LinearLayout>

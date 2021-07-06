@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">GettingToKnowAndroidPlatform</string>
+    <string name="back">Назад</string>
+    <string name="choose_confident_date">Выберите удобную дату</string>
+    <string name="next_task">След. задание</string>
+    <string name="send">Отправить</string>
+    <string name="email">email:</string>
+    <string name="password">Пароль:</string>
+    <string name="age">Возраст:</string>
+    <string name="phone">Телефон</string>
+    <string name="full_name">ФИО:</string>
+    <string name="organization">Организация:</string>
+    <string name="enter_your_details">Введите ваши данные</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="sex">Пол:</string>
+    <string name="man">Мужчина</string>
+    <string name="woman">Женщина</string>
+    <string name="prog_langs">Языки програмирования:</string>
+    <string name="cpp">С++</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="dnt_remember">Не запоминать</string>
+    <string name="remember">Запомнить меня</string>
 </resources>
